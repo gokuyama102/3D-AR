@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: #333">
+        <a-assets>
+            <a-asset-item id="ENA58TL" src="/gltf/ENA58TL-R10DA7-1516-IO-RBD01.gltf"></a-asset-item>
+            <a-asset-item id="ICE2" src="/gltf/ICE2-8IOL-G65L-V1D.gltf"></a-asset-item>
+            <a-asset-item id="IQT1" src="/gltf/IQT1-FP-IO-V1.gltf"></a-asset-item>
+            <a-asset-item id="NRB20" src="/gltf/NRB20-L3-E2-IO-V1.gltf"></a-asset-item>
+            <a-asset-item id="OMT300" src="/gltf/OMT300-R200-2EP-IO-V1.gltf"></a-asset-item>
+            <a-asset-item id="PMI40" src="/gltf/PMI40-F90-IU2EP-IO-V15.gltf"></a-asset-item>
+            <a-asset-item id="UC800-F77S-EP-IO-V31.gltf" src="/gltf/UC800-F77S-EP-IO-V31.gltf"></a-asset-item>
+            <a-asset-item id="vim" src="/gltf/vim.gltf"></a-asset-item>
+
+
+
+            <a-asset-item id="PXV-obj" src="/PXV100-F200-B25-V1D.gltf"></a-asset-item>
+            <a-asset-item id="basic-mtl" src="/basic.mtl"></a-asset-item>
+            <a-asset-item response-type="arraybuffer" id="pxv" src="/2-D LiDAR Sensor OBD30M-R2000-4EP-V1V17-1L.gltf">
+            </a-asset-item>
+        </a-assets>
+
+        <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
+        <a-entity gltf-model="#VBG-ENX-K20-DMD-obj" scale="0.001 0.001 0.001" position="0 1.5 -1" rotation="90 0 0">
+        </a-entity>
+        <a-entity gltf-model="#ICE2" scale="0.001 0.001 0.001" position="-0.37 0.943 -1" rotation="90 90 0"
+></a-entity>
+        </a-entity>
+        <a-entity gltf-model="#PXV-obj" scale="0.001 0.001 0.001" position="0.1 1.5 -1" rotation="90 0 0"
+            animation__mouseenter="property: position; to: 0.6 1.5 -1; dur: 1000; easing: linear;startEvents: mouseenter;"
+            animation__mouseleave="property: position; to: 0.1 1.5 -1; dur: 1000; easing: linear;startEvents: mouseleave;">
+        </a-entity>
+        <a-box position="0 0 0" depth="10" height="0.1" width="10" color="#4CC3D9"
+            animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500"
+            animation__mouseleave="property: components.material.material.color; type: color; to: red; startEvents: mouseleave; dur: 500">
+        </a-box>
+
+        <a-box position="0 1 -1" width="0.600" depth="0.600" height="0.100" color="#425563"></a-box>
+        <a-box position="0 1.0505 -1.26" width="0.600" depth="0.080" height="0.001" color="#fff"></a-box>
+        <a-box position="0 1.0505 -0.74" width="0.600" depth="0.080" height="0.001" color="#fff"></a-box>
+        <a-box position="0 1.0505 -1" width="0.600" depth="0.440" height="0.001" color="#ccc"></a-box>
+
+
+        </a-box>
+    </a-scene>
+</body>
+
+</html>

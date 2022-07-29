@@ -25,10 +25,10 @@
 
         <!-- Controles-->
         <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
-        <a-entity oculus-touch-controls="hand: left"></a-entity>
+        <a-entity oculus-touch-controls="hand: left" raycaster="lineColor: red; lineOpacity: 0.5" oculus-touch-controls></a-entity>
         <a-entity laser-controls="hand: left"></a-entity>
         <a-entity oculus-touch-controls="hand: right"></a-entity>
-        <a-entity laser-controls="hand: right"></a-entity>
+        <a-entity laser-controls="hand: right" raycaster="lineColor: red; lineOpacity: 0.5" oculus-touch-controls></a-entity>
         <!-- piso -->
         <a-box id="ePiso" position="0 0 0" depth="10" height="0.1" width="10" color="rgb(0,165,135)"></a-box>
 

@@ -22,32 +22,28 @@
 
         <!-- piso -->
         <a-box position="0 0 0" depth="10" height="0.1" width="10" color="rgb(0,165,135)"></a-box>
-        <a-box id="eBancada" material="color: #425563" geometry="depth: 0.5; height: 1.2; width: 1.84" position="0 0.46 -1.09" width="0.600" depth="0.080"
-            height="0.001" color="#DDD"></a-box>
+        <a-box id="eBancada" material="color: #425563" geometry="depth: 0.5; height: 1.2; width: 1.84"
+            position="0 0.46 -1.09" width="0.600" depth="0.080" height="0.001" color="#DDD"></a-box>
         <a-entity id="ePult" rotation="70 0 0" position="-0.45 0 -1.75">
 
-            <a-box id="eFaixaSuperior" geometry="depth: 0.05" position="0 1.0505 -1.175" width="0.600" depth="0.080"
-                height="0.001" color="#fff"></a-box>
-            <a-box id="eFaixaInferior" geometry="depth: 0.05" position="0 1.0505 -0.825" width="0.600" depth="0.080"
-                height="0.001" color="#fff"></a-box>
-            <a-box id="eFaixaCentral" geometry="depth: 0.3" position="0 1.0505 -1" width="0.600" depth="0.440"
-                height="0.001" color="#ccc">
+            <a-box id="eFaixaInferior" position="0 1.0505 -0.2825" width="0.530" depth="0.050" height="0.001"
+                color="#fff"></a-box>
+            <a-box id="eFaixaCentral" position="0 1.0505 -1" width="0.530" depth="0.350" height="0.001" color="#ccc">
             </a-box>
-            <a-image id="eLogo" src="#logo" position="0.18 1.0511 -1.178" scale="0.2 0.04 0" rotation="-90 0 0">
+            <a-image id="eLogo" src="#logo" position="0.16 1.0511 -0.85" scale="0.2 0.04 0" rotation="-90 0 0">
             </a-image>
-            <a-image id="eSlogan" src="#claim" position="-0.16 1.0511 -1.178" scale="0.25 0.04 0" rotation="-90 0 0">
-            </a-image>
+
             <a-text id="eTextoPreto" text="value: Tecnologia RFID" value="Tecnologia IO-Link" negate="true" color="#000"
-                position="-0.28 1.0511 -0.835" scale="0.10 0.10" rotation="-90 0 0"></a-text>
+                position="-0.25 1.0511 -0.86" scale="0.10 0.10" rotation="-90 0 0"></a-text>
             <a-text id="eTexto Verde" text="value: Indentificacao por Radio Frequencia"
                 value="Abrindo caminho para a Industria 4.0" negate="true" color="rgb(0,165,135)"
-                position="-0.28 1.0511 -0.815" scale="0.08 0.08" rotation="-90 0 0"></a-text>
+                position="-0.25 1.0511 -0.84" scale="0.08 0.08" rotation="-90 0 0"></a-text>
 
             <!-- dispositivos -->
-            <a-entity id="eICE2" position="-0.02 0 0.1">
-                <a-entity gltf-model="#ICE2" scale="0.001 0.001 0.001" position="-0.210 1.0705 -1.100"
+            <a-entity id="eICE2" position="-0.00 0 0.07">
+                <a-entity gltf-model="#ICE2" scale="0.001 0.001 0.001" position="-0.200 1.0705 -1.120"
                     rotation="90 90 0" color="#000"></a-entity>
-                <a-entity conectores position="-0.210 1.0805 -1.162">
+                <a-entity conectores position="-0.200 1.0805 -1.182">
                     <a-entity gltf-model="#V1S" position="-0.015 0 0.022" rotation="0 0 90"> </a-entity>
                     <a-entity position="0 0 0.044" rotation="0 180 0">
                         <a-entity position="0.03 0.045 0.022"
@@ -59,40 +55,34 @@
                     </a-entity>
                 </a-entity>
             </a-entity>
-            <a-entity id="eFP" gltf-model="#IQT1" scale="0.001 0.001 0.001" position="-0.10506 1.0505 -1.08"
+            <a-entity id="eFP" gltf-model="#IQT1" scale="0.001 0.001 0.001" position="-0.08506 1.0505 -1.12"
                 rotation="90 180 0"> </a-entity>
-            <a-entity id="eF190" gltf-model="#F190" scale="0.001 0.001 0.001" position="-0.1 1.0705 -0.93"
+            <a-entity id="eF190" gltf-model="#F190" scale="0.001 0.001 0.001" position="-0.08 1.0555 -0.97"
                 rotation="90 180 0" color="#000"></a-entity>
-            <a-entity id="eKP2" gltf-model="#KP2" scale="0.001 0.001 0.001" position="0.03 1.0705 -1.01"
+            <a-entity id="eKP2" gltf-model="#KP2" scale="0.001 0.001 0.001" position="0.03 1.0505 -1.03"
                 rotation="90 180 0" color="#000"></a-entity>
-            <a-entity id="eF15" gltf-model="#F15" scale="0.001 0.001 0.001" position="0.19 1.0705 -1.05"
+            <a-entity id="eF15" gltf-model="#F15" scale="0.001 0.001 0.001" position="0.17 1.0605 -1.07"
                 rotation="180 90 0" color="#000"></a-entity>
-
-
 
         </a-entity>
 
         <a-entity id="ePult2" rotation="70 0 0" position="0.45 0 -1.75">
 
-            <a-box id="eFaixaSuperior2" geometry="depth: 0.05" position="0 1.0505 -1.175" width="0.600" depth="0.080"
-                height="0.001" color="#fff"></a-box>
-            <a-box id="eFaixaInferior2" geometry="depth: 0.05" position="0 1.0505 -0.825" width="0.600" depth="0.080"
-                height="0.001" color="#fff"></a-box>
-            <a-box id="eFaixaCentral2" geometry="depth: 0.3" position="0 1.0505 -1" width="0.600" depth="0.440"
-                height="0.001" color="#ccc">
+            <a-box id="eFaixaInferior" position="0 1.0505 -0.2825" width="0.530" depth="0.050" height="0.001"
+                color="#fff"></a-box>
+            <a-box id="eFaixaCentral" position="0 1.0505 -1" width="0.530" depth="0.350" height="0.001" color="#ccc">
             </a-box>
-            <a-image id="eLogo2" src="#logo" position="0.18 1.0511 -1.178" scale="0.2 0.04 0" rotation="-90 0 0">
+            <a-image id="eLogo" src="#logo" position="0.16 1.0511 -0.85" scale="0.2 0.04 0" rotation="-90 0 0">
             </a-image>
-            <a-image id="eSlogan2" src="#claim" position="-0.16 1.0511 -1.178" scale="0.25 0.04 0" rotation="-90 0 0">
-            </a-image>
-            <a-text id="eTextoPreto2" text="value: Tecnologia RFID" value="Tecnologia IO-Link" negate="true" color="#000"
-                position="-0.28 1.0511 -0.835" scale="0.10 0.10" rotation="-90 0 0"></a-text>
-            <a-text id="eTextoVerde2" text="value: Indentificacao por Radio Frequencia"
+
+            <a-text id="eTextoPreto" text="value: Tecnologia RFID" value="Tecnologia IO-Link" negate="true" color="#000"
+                position="-0.25 1.0511 -0.86" scale="0.10 0.10" rotation="-90 0 0"></a-text>
+            <a-text id="eTexto Verde" text="value: Indentificacao por Radio Frequencia"
                 value="Abrindo caminho para a Industria 4.0" negate="true" color="rgb(0,165,135)"
-                position="-0.28 1.0511 -0.815" scale="0.08 0.08" rotation="-90 0 0"></a-text>
+                position="-0.25 1.0511 -0.84" scale="0.08 0.08" rotation="-90 0 0"></a-text>
 
             <!-- dispositivos -->
-            <a-entity id="eICE22" rotation="0 -90 0" position="-1.25 0 -0.69">
+            <a-entity id="eICE22" rotation="0 -90 0" position="-1.21 0 -0.71">
                 <a-entity gltf-model="#ICE2" scale="0.001 0.001 0.001" position="-0.210 1.0705 -1.100"
                     rotation="90 90 0" color="#000"></a-entity>
                 <a-entity conectores position="-0.210 1.0805 -1.162">
@@ -107,13 +97,13 @@
                     </a-entity>
                 </a-entity>
             </a-entity>
-            <a-entity id="eFP2" gltf-model="#IQT1" scale="0.001 0.001 0.001" position="-0.19506 1.0505 -1.1"
+            <a-entity id="eFP2" gltf-model="#IQT1" scale="0.001 0.001 0.001" position="-0.17506 1.0505 -1.1"
                 rotation="90 180 0"> </a-entity>
-            <a-entity id="eF1902" gltf-model="#F190" scale="0.001 0.001 0.001" position="0.18 1.0705 -1.08"
+            <a-entity id="eF1902" gltf-model="#F190" scale="0.001 0.001 0.001" position="0.16 1.0555 -1.09"
                 rotation="90 180 0" color="#000"></a-entity>
-            <a-entity id="eKP22" gltf-model="#KP2" scale="0.001 0.001 0.001" position="0.12 1.0705 -0.89"
+            <a-entity id="eKP22" gltf-model="#KP2" scale="0.001 0.001 0.001" position="0.12 1.0505 -0.92"
                 rotation="90 90 0" color="#000"></a-entity>
-            <a-entity id="eF152" gltf-model="#F15" scale="0.001 0.001 0.001" position="-0.01 1.0705 -1.09"
+            <a-entity id="eF152" gltf-model="#F15" scale="0.001 0.001 0.001" position="-0.01 1.0605 -1.1"
                 rotation="180 90 0" color="#000"></a-entity>
 
 

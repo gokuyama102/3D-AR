@@ -13,6 +13,7 @@
             <a-asset-item id="F190" src="gltf/F190.gltf"></a-asset-item>
             <a-asset-item id="KP2" src="gltf/KP2.gltf"></a-asset-item>
             <a-asset-item id="IQT1" src="gltf/IQT1.gltf"></a-asset-item>
+            <a-asset-item id="F61" src="gltf/F61.gltf"></a-asset-item>
             <a-asset-item id="V1S" src="gltf/V1S-G-BK.gltf"></a-asset-item>
             <img id="claim" src="claim.png">
             <img id="logo" src="logo.PNG">
@@ -24,7 +25,7 @@
         <a-box position="0 0 0" depth="10" height="0.1" width="10" color="rgb(0,165,135)"></a-box>
         <a-box id="eBancada" material="color: #425563" geometry="depth: 0.5; height: 1.2; width: 1.84"
             position="0 0.46 -1.09" width="0.600" depth="0.080" height="0.001" color="#DDD"></a-box>
-        <a-entity id="ePult" rotation="70 0 0" position="-0.45 0 -1.75">
+        <a-entity id="ePult" rotation="70 0 0" position="-0.6 0 -1.75">
 
             <a-box id="eFaixaInferior" position="0 1.0505 -0.2825" width="0.530" depth="0.050" height="0.001"
                 color="#fff"></a-box>
@@ -66,7 +67,7 @@
 
         </a-entity>
 
-        <a-entity id="ePult2" rotation="70 0 0" position="0.45 0 -1.75">
+        <a-entity id="ePult2" rotation="70 0 0" position="0.0 0 -1.75">
 
             <a-box id="eFaixaInferior" position="0 1.0505 -0.2825" width="0.530" depth="0.050" height="0.001"
                 color="#fff"></a-box>
@@ -107,6 +108,81 @@
                 rotation="180 90 0" color="#000"></a-entity>
 
 
+
+        </a-entity>
+
+        <a-entity id="ePult3" rotation="70 0 0" position="0.6 0 -1.75">
+
+            <a-box id="eFaixaInferior3" position="0 1.0505 -0.2825" width="0.530" depth="0.050" height="0.001"
+                color="#fff"></a-box>
+            <a-box id="eFaixaCentral3" position="0 1.0505 -1" width="0.530" depth="0.350" height="0.001" color="#ccc">
+            </a-box>
+            <a-image id="eLogo3" src="#logo" position="0.16 1.0511 -0.85" scale="0.2 0.04 0" rotation="-90 0 0">
+            </a-image>
+
+            <a-text id="eTextoPreto3" text="value: Tecnologia RFID" value="Tecnologia IO-Link" negate="true"
+                color="#000" position="-0.25 1.0511 -0.86" scale="0.10 0.10" rotation="-90 0 0"></a-text>
+            <a-text id="eTexto Verde3" text="value: Indentificacao por Radio Frequencia"
+                value="Abrindo caminho para a Industria 4.0" negate="true" color="rgb(0,165,135)"
+                position="-0.25 1.0511 -0.84" scale="0.08 0.08" rotation="-90 0 0"></a-text>
+
+            <!-- dispositivos -->
+            <a-entity id="eICE23" position="-0.08 0 0.07">
+                <a-entity gltf-model="#ICE2" scale="0.001 0.001 0.001" position="0.00 1.0705 -1.120" rotation="90 90 0"
+                    color="#000"></a-entity>
+                <a-entity conectores position="0.00 1.0805 -1.182">
+
+                    <a-entity gltf-model="#V1S" position="-0.015 0 0.00" rotation="0 0 90"> </a-entity>
+                    <a-entity gltf-model="#V1S" position="-0.015 0 0.022" rotation="0 0 90"> </a-entity>
+                    <a-entity gltf-model="#V1S" position="-0.015 0 0.044" rotation="0 0 90"> </a-entity>
+                    <a-entity gltf-model="#V1S" position="-0.015 0 0.17" rotation="0 0 90"> </a-entity>
+                    <a-entity position="0 0 0.022" rotation="0 180 0">
+                        <a-entity position="0.03 0.045 0.022"
+                            geometry="primitive: torus; radius: 0.015; radiusTubular: 0.002; arc: 180; "
+                            material="color:grey"> </a-entity>
+                        <a-cylinder position="0.045 0.005 0.022" radius="0.004" height="0.08" rotation="0 0 0"
+                            color="grey">
+                        </a-cylinder>
+                    </a-entity>
+
+                    <a-entity position="0 0 0.044" rotation="0 180 0">
+                        <a-entity position="0.03 0.045 0.022"
+                            geometry="primitive: torus; radius: 0.015; radiusTubular: 0.001; arc: 180; "
+                            material="color:grey"> </a-entity>
+                        <a-cylinder position="0.045 0.005 0.022" radius="0.002" height="0.08" rotation="0 0 0"
+                            color="grey">
+                        </a-cylinder>
+                    </a-entity>
+                    <a-entity position="0 0 0.066" rotation="0 180 0">
+                        <a-entity position="0.03 0.045 0.022"
+                            geometry="primitive: torus; radius: 0.015; radiusTubular: 0.001; arc: 180; "
+                            material="color:grey"> </a-entity>
+                        <a-cylinder position="0.045 0.005 0.022" radius="0.002" height="0.08" rotation="0 0 0"
+                            color="grey">
+                        </a-cylinder>
+                    </a-entity>
+                    <a-entity position="0 0 0.195" rotation="0 180 0">
+                        <a-entity position="0.03 0.045 0.022"
+                            geometry="primitive: torus; radius: 0.015; radiusTubular: 0.002; arc: 180; "
+                            material="color:rgb(0,125,95)"> </a-entity>
+                        <a-cylinder position="0.045 0.005 0.022" radius="0.004" height="0.08" rotation="0 0 0"
+                            color="rgb(0,125,95)">
+                        </a-cylinder>
+                    </a-entity>
+                </a-entity>
+            </a-entity>
+            <a-entity id="eFP3" gltf-model="#IQT1" scale="0.001 0.001 0.001" position="-0.20506 1.0505 -0.98"
+                rotation="90 180 0"> </a-entity>
+
+            <a-entity id="eF613" gltf-model="#F61" scale="0.001 0.001 0.001" position="-0.20506 1.061 -1.11"
+                rotation="-90 180 0"> </a-entity>
+
+            <a-entity id="eKP23" gltf-model="#KP2" scale="0.001 0.001 0.001" position="0 1.0505 -1.07"
+                rotation="90 180 0"></a-entity>
+            <a-entity id="eF1903" gltf-model="#F190" scale="0.001 0.001 0.001" position="0.17 1.0555 -1.1"
+                rotation="90 90 0"></a-entity>
+            <a-entity id="eF153" gltf-model="#F15" scale="0.001 0.001 0.001" position="0.18 1.0605 -0.95"
+                rotation="180 0 0"></a-entity>
 
         </a-entity>
 

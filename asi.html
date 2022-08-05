@@ -10,13 +10,29 @@
         <a-assets>
             <a-asset-item id="K20" src="gltf/AS-Interface gateway VBG-ENX-K20-DMD.gltf"></a-asset-item>
             <a-asset-item id="KE4" src="gltf/AS-Interface Safety Monitor VAS-2A8L-KE4-8SE.gltf"></a-asset-item>
-            <a-asset-item id="G11" src="gltf/AS-Interface sensor_actuator module VBA-4E4A-G11-ZAJ_EA2L-F.gltf"></a-asset-item>
-            <a-asset-item id="G12" src="gltf/AS-Interface sensor_actuator module VBA-4E4A-G12-ZEJ_EA2L.gltf"></a-asset-item>
+            <a-asset-item id="G10" src="gltf/AS-Interface sensor module VBA-2E-G10-ZAJ-1M-V1-W.obj">
+            </a-asset-item>
+            <a-asset-item id="G11" src="gltf/AS-Interface sensor_actuator module VBA-4E4A-G11-ZAJ_EA2L-F.gltf">
+            </a-asset-item>
+            <a-asset-item id="G12" src="gltf/AS-Interface sensor_actuator module VBA-4E4A-G12-ZEJ_EA2L.gltf">
+            </a-asset-item>
+            <a-asset-item id="PMI40" src="gltf/PMI40.gltf"></a-asset-item>
+            <a-asset-item id="BT-F90" src="gltf/BT-F90.gltf"></a-asset-item>
 
-            <a-asset-item id="F31" src="gltf/Inductive sensor NCN3-F31-B3B-V1-K.gltf"></a-asset-item>
+            <a-asset-item id="BT65" src="gltf/Activator BT65A.gltf"> </a-asset-item>
+            <a-asset-item id="VBP" src="gltf/AS-Interface Handheld VBP-HH1-V3.0.gltf"></a-asset-item>
+            <a-asset-item id="F85" src="gltf/F85.obj"> </a-asset-item>
+            <a-asset-item id="PT100" src="gltf/Inductive sensor NJ2-PD-E02-2.062-V95.obj"> </a-asset-item>
+
+            <a-asset-item id="F31" src="gltf/F31.glb"> </a-asset-item>
+            <a-asset-item id="F31K" src="gltf/F31K.obj"> </a-asset-item>
 
             <img id="claim" src="claim.png">
             <img id="logo" src="logo.PNG">
+
+
+            <a-asset-item id="mtl" src="basic.mtl"></a-asset-item>
+            <a-asset-item id="redmtl" src="gltf/red.mtl"></a-asset-item>
         </a-assets>
 
         <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
@@ -26,29 +42,92 @@
         <a-box id="eBancada" material="color: #425563" geometry="depth: 0.5; height: 1.2; width: 1.84"
             position="0 0.46 -1.09" width="0.600" depth="0.080" height="0.001" color="#DDD"></a-box>
 
-            <a-entity id="eConjunto" position="-0.3 1.6 -0.600" rotation="90 0 0">
-                <a-box id="eBase" scale="0.500 0.005 0.340" color="#bbb"></a-box>
-                <a-box id="eRodape" position="0 0.002 0.145" scale="0.500 0.002 0.050" color="#fff"></a-box>
-                <a-entity id="eK20" gltf-model="#K20" position="-0.15 0.01 -0.03" scale="0.001 0.001 0.001"></a-entity>
-                <a-entity id="eKE4" gltf-model="#KE4" position="-0.12 0.01 -0.05" scale="0.001 0.001 0.001"></a-entity>
+        <a-entity id="eConjunto" position="-0.3 1.6 -0.600" rotation="90 0 0">
+            <a-box id="eBase" scale="0.500 0.005 0.340" color="#bbb"></a-box>
+            <a-box id="eRodape" position="0 0.002 0.145" scale="0.500 0.002 0.050" color="#fff"></a-box>
 
-                <a-entity id="eG11" gltf-model="#G11" position="-0.16423 0.015 0.06531" scale="0.001 0.001 0.001"
+            <a-image id="eLogo" src="#logo" position="0.14 0.0031 0.145" scale="0.2 0.04 0" rotation="-90 0 0">
+            </a-image>
+
+            <a-text id="eTextoPreto" text="value: Rede AS-interface" negate="true" color="#000"
+                position="-0.24 0.0031 0.135" scale="0.10 0.10" rotation="-90 0 0"></a-text>
+            <a-text id="eTextoVerde" text="value: Infraestrutura simplificada" negate="true" color="rgb(0,165,135)"
+                position="-0.24 0.0031 0.155" scale="0.08 0.08" rotation="-90 0 0"></a-text>
+
+            <a-entity id="eK20" gltf-model="#K20" position="-0.15 0.01 -0.03" scale="0.001 0.001 0.001"></a-entity>
+            <a-entity id="eKE4" gltf-model="#KE4" position="-0.12 0.01 -0.05" scale="0.001 0.001 0.001"></a-entity>
+            <a-entity id="eKE42" gltf-model="#KE4" position="-0.09 0.01 -0.05" scale="0.001 0.001 0.001"></a-entity>
+            <a-entity id="eG10" gltf-model="#G10" position="-0.0423 0.015 0.06531" scale="0.001 0.001 0.001"
                 rotation="90 0 0"></a-entity>
-                <a-entity id="eG12" gltf-model="#G12" position="-0.02751 0.03 -0.15337" scale="0.001 0.001 0.001"></a-entity>
-                <a-box id="e6TEE" scale="0.1155 0.0667 0.2235" color="#555"></a-box>
+            <a-entity id="eG11" gltf-model="#G11" position="-0.16423 0.015 0.06531" scale="0.001 0.001 0.001"
+                rotation="90 0 0"></a-entity>
+            <a-entity id="eG12" gltf-model="#G12" position="-0.02751 0.03 -0.15337" scale="0.001 0.001 0.001">
             </a-entity>
 
-            <a-entity id="eConjunto" position="0.3 1.6 -0.600" rotation="90 0 0">
-                <a-box id="eBase" scale="0.500 0.005 0.340" color="#bbb"></a-box>
-                <a-box id="eRodape" position="0 0.002 0.145" scale="0.500 0.002 0.050" color="#fff"></a-box>
-
-                <a-entity id="eG11" gltf-model="#G11" position="-0.16423 0.015 0.06531" scale="0.001 0.001 0.001"
-                rotation="90 0 0"></a-entity>
-                <a-entity id="eG12" gltf-model="#G12" position="-0.02751 0.03 -0.15337" scale="0.001 0.001 0.001"></a-entity>
-                <a-box id="e6TEE" position="" scale="0.1155 0.0667 0.2235" color="#555"></a-box>
-                <a-entity id="eF31" gltf-model="#F31" position="-0.02751 0.03 -0.15337" scale="0.001 0.001 0.001"></a-entity>
+            <a-entity id="eVBP" gltf-model="#VBP" position="0.19 0.03 0.01" scale="0.001 0.001 0.001"
+                rotation="90 -90 0">
             </a-entity>
-            
+            <a-entity id="eF85" obj-model="obj:#F85; mtl:#redmtl" position="0.1 -0.0578 0.03" scale="0.001 0.001 0.001"
+                rotation="-90 90 0">
+            </a-entity>
+            <a-entity id="eG10" obj-model="obj:#G10; mtl:#mtl" position="0.05 0 0.09" scale="0.001 0.001 0.001"
+                rotation="-90 0 0">
+            </a-entity>
+
+        </a-entity>
+
+        <a-entity id="eConjunto2" position="0.3 1.6 -0.600" rotation="90 0 0">
+            <a-box id="eBase2" scale="0.500 0.005 0.340" color="#bbb"></a-box>
+            <a-box id="eRodape" position="0 0.002 0.145" scale="0.500 0.002 0.050" color="#fff"></a-box>
+
+            <a-image id="eLogo2" src="#logo" position="0.14 0.0031 0.145" scale="0.2 0.04 0" rotation="-90 0 0">
+            </a-image>
+
+            <a-text id="eTextoPreto2" text="value: Rede AS-interface" negate="true" color="#000"
+                position="-0.24 0.0031 0.135" scale="0.10 0.10" rotation="-90 0 0"></a-text>
+            <a-text id="eTextoVerde2" text="value: Equipamentos de processos" negate="true" color="rgb(0,165,135)"
+                position="-0.24 0.0031 0.155" scale="0.08 0.08" rotation="-90 0 0"></a-text>
+
+
+
+            <a-entity id="eG11" gltf-model="#G11" position="-0.16423 0.015 -0.10531" scale="0.001 0.001 0.001"
+                rotation="90 0 0"></a-entity>
+
+            <a-entity position="-0.23 0.03 0.04" rotation="0 180 0">
+                <a-entity gltf-model="#PMI40" scale="0.001 0.001 0.001" position="0 0 0" rotation="0 90 0"
+                    link="on:click;href:https://iolmgo.mybluemix.net/ui/#!/10">
+                </a-entity>
+                <a-entity animation="property: position; from: 0 0 0; to: 0.04 0 0;
+                dir: alternate; dur: 5300; easing: easeInOutQuad; loop:true">
+                    <a-entity gltf-model="#BT-F90" scale="1 1 1" position="-0.065 -0.015 0.023" rotation="90 0 0">
+                    </a-entity>
+                    <a-cylinder position="-0.06 -0.025 0.028" radius="0.0015" height="0.05" color="#eee"></a-cylinder>
+                    <a-cylinder position="-0.042 -0.025 0.028" radius="0.0015" height="0.05" color="#eee"></a-cylinder>
+                </a-entity>
+                <a-box position="-0.03 -0.045 0.028" scale="0.08 0.002 0.01" color="#222"></a-box>
+            </a-entity>
+            <a-entity id="ePT100" obj-model="obj:#PT100; mtl:#mtl" position="-0.13 0.01 0.03" scale="0.01 0.01 0.025"
+                rotation="-0 0 -90">
+            </a-entity>
+
+            <a-box id="e6TEE" position="0 0.0333 -0.02" scale="0.1155 0.0667 0.2235" color="#555"></a-box>
+
+            <a-entity id="eF31" gltf-model="#F31" position="0.13 0.00 -0.08" scale="0.001 0.001 0.001"
+                rotation="0 90 0">
+            </a-entity>
+            <a-entity id="eBT65" gltf-model="#BT65" position="0.20 0.005 -0.08" scale="0.001 0.001 0.001"
+                rotation="90 0 0">
+            </a-entity>
+
+            <a-entity id="eF31K" obj-model="obj:#F31K; mtl:#redmtl" position="0.13 0 0.05" scale="0.001 0.001 0.001"
+                rotation="0 90 0">
+            </a-entity>
+            <a-entity id="eBT652" gltf-model="#BT65" position="0.20 0.005 0.05" scale="0.001 0.001 0.001"
+                rotation="90 0 0">
+            </a-entity>
+
+        </a-entity>
+
 
     </a-scene>
 </body>
